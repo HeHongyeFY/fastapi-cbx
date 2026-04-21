@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-cbx"
+version = "1.0.1"
+description = "Minimal class-based routing extension for FastAPI"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["fastapi >=0.95.0"]
+authors = [
+  { name = "HeHongye", email = "18348574371@139.com" }
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "httpx",
+  "coverage"
+]
+
+[project.urls]
+Homepage = "https://github.com/HeHongyeFY/fastapi-cbx"
+Repository = "https://github.com/HeHongyeFY/fastapi-cbx"
+
+[tool.setuptools]
+py-modules = ["cbx"]
